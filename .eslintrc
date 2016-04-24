@@ -1,0 +1,16 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module"
+	},
+	"env": {
+		"es6": true
+	},
+	"rules": {
+		"semi": [2, "never"],
+		"quotes": [1, "single"],
+		"eqeqeq": [2, "smart"],
+		"no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
+		"no-use-before-define": [2, "nofunc"]
+	}
+}
