@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+
+    <link rel="stylesheet" href="./vendor/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script> -->
   </head>
 
   <body>
-		<h1>Hello, world!</h1>
 
-		<script>require('babel-register')</script>
-		<script>require('babel-polyfill')</script>
-		<script>require('./lib/browser/server.js')</script>
+    <div class="container-fluid" id="root"></div>
+
+    <script>require('babel-register')</script>
+    <script>require('babel-polyfill')</script>
+    <script>require('./lib/browser/index')</script>
   </body>
 </html>
