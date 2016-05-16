@@ -1,14 +1,14 @@
 import React, {PropTypes} from 'react'
 
 function renderKeyVal(key, val) {
-  return <p><b>{key}:</b> {val}</p>
+  return <p style={{wordBreak: 'break-all'}}><b>{key}:</b> {val}</p>
 }
 
 function renderHeaders(headers) {
   return Object.keys(headers).map((key) => {
     const val = headers[key]
 
-    return renderKeyVal(key, val)
+    return <div key={key}>{renderKeyVal(key, val)}</div>
   })
 }
 
@@ -26,7 +26,7 @@ const ProxyDetails = ({proxy}) => {
   } else {
     html = (
       <div>
-        <p>{body.toString()}</p>
+        <p style={{wordBreak: 'break-all'}}>{body.toString()}</p>
       </div>
     )
   }
